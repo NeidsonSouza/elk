@@ -22,6 +22,8 @@ services:
 
   kibana:
     image: docker.elastic.co/kibana/kibana:7.15.0
+    volumes:
+      - ./kibana/kibana.yml:/usr/share/kibana/config/kibana.yml
     ports:
       - "5601:5601"
     depends_on:
