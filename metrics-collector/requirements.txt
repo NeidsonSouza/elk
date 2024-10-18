@@ -1,0 +1,2 @@
+psutil==6.1.0
+python-logstash==0.4.8
